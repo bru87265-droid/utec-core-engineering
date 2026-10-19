@@ -3,10 +3,10 @@
 
 def pow(a, b):
     if b < 0:
-        result = 1.0
+        denominator = 1
         for _ in range(-b):
-            result /= a
-        return result
+            denominator *= a
+        return 1.0 / denominator
 
     result = 1
     for _ in range(b):
